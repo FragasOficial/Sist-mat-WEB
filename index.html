@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Inscrição</h1>
+        <form id="registration-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Data de Nascimento:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="fatherName">Nome do Pai:</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="motherName">Nome da Mãe:</label>
+            <input type="text" id="motherName" name="motherName" required>
+
+            <label for="grade">Série:</label>
+            <input type="text" id="grade" name="grade" required>
+
+            <label for="registrationDate">Data de Matrícula:</label>
+            <input type="date" id="registrationDate" name="registrationDate" required>
+
+            <label for="documents">Documentos Pessoais (RG/CPF):</label>
+            <input type="text" id="documents" name="documents" required>
+
+            <label for="location">Localidade:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="citizenCard">Nº Cartão do Cidadão:</label>
+            <input type="text" id="citizenCard" name="citizenCard" required>
+
+            <label for="disorder">Tem Transtorno/Laudo:</label>
+            <input type="text" id="disorder" name="disorder" required>
+
+            <label for="cid">CID:</label>
+            <input type="text" id="cid" name="cid" required>
+
+            <button type="button" onclick="generatePDF()">Gerar PDF</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
